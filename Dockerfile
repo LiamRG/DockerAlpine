@@ -7,6 +7,7 @@ RUN npm install mockserver
 COPY api.js /
 RUN mkdir mocks
 COPY manufacturers /mocks/manufacturers
+COPY GET.mock /mocks/
 
 EXPOSE 9001/tcp
 
